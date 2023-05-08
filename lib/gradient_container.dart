@@ -32,6 +32,19 @@ class GradientContainer extends StatelessWidget {
                 fontSize: 30,
               ),
             ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.transparent,
+                foregroundColor: Colors.black,
+                padding: const EdgeInsets.all(15),
+                textStyle: const TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              child: const Text('StartQuiz'),
+            ),
           ],
         ),
       ),
