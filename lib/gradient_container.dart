@@ -32,6 +32,9 @@ class GradientContainer extends StatelessWidget {
                 fontSize: 30,
               ),
             ),
+            const SizedBox(
+              height: 20,
+            ),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
