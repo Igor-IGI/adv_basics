@@ -21,6 +21,13 @@ class GradientContainer extends StatelessWidget {
         child: Column(
           children: [
             Image.asset('assets/images/quiz-logo.png'),
+            const Text(
+              'Learn Flutter the fun way!',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+              ),
+            ),
           ],
         ),
       ),
