@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key, required this.colors});
+class StartScreen extends StatelessWidget {
+  const StartScreen({super.key, required this.colors});
 
   final List<Color> colors;
   static const startAlignment = Alignment.topLeft;
