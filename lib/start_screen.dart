@@ -38,11 +38,10 @@ class StartScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            ElevatedButton(
+            OutlinedButton(
               onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.transparent,
-                foregroundColor: Colors.black,
+              style: OutlinedButton.styleFrom(
+                foregroundColor: Colors.white,
                 padding: const EdgeInsets.all(15),
                 textStyle: const TextStyle(
                   fontSize: 25,
