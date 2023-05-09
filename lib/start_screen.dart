@@ -43,6 +43,10 @@ class StartScreen extends StatelessWidget {
               style: OutlinedButton.styleFrom(
                 foregroundColor: Colors.white,
                 padding: const EdgeInsets.all(15),
+                side: const BorderSide(
+                  width: 2,
+                  color: Colors.white,
+                ),
                 textStyle: const TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
