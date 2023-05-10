@@ -9,58 +9,49 @@ class StartScreen extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: colors,
-          begin: startAlignment,
-          end: endAlignment,
-        ),
-      ),
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Image.asset(
-              'assets/images/quiz-logo.png',
-              width: 300,
-              color: const Color.fromARGB(150, 255, 255, 255),
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset(
+            'assets/images/quiz-logo.png',
+            width: 300,
+            color: const Color.fromARGB(150, 255, 255, 255),
+          ),
+          const SizedBox(
+            height: 70,
+          ),
+          const Text(
+            'Learn Flutter the fun way!',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30,
             ),
-            const SizedBox(
-              height: 70,
-            ),
-            const Text(
-              'Learn Flutter the fun way!',
-              style: TextStyle(
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          OutlinedButton.icon(
+            onPressed: () {},
+            style: OutlinedButton.styleFrom(
+              foregroundColor: Colors.white,
+              padding: const EdgeInsets.all(15),
+              side: const BorderSide(
+                width: 2,
                 color: Colors.white,
-                fontSize: 30,
+              ),
+              textStyle: const TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(
-              height: 20,
+            icon: const Icon(
+              Icons.arrow_right_alt,
+              size: 50,
             ),
-            OutlinedButton.icon(
-              onPressed: () {},
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.all(15),
-                side: const BorderSide(
-                  width: 2,
-                  color: Colors.white,
-                ),
-                textStyle: const TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              icon: const Icon(
-                Icons.arrow_right_alt,
-                size: 50,
-              ),
-              label: const Text('StartQuiz'),
-            ),
-          ],
-        ),
+            label: const Text('StartQuiz'),
+          ),
+        ],
       ),
     );
   }
