@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
-  const StartScreen({super.key, required this.colors});
-
-  final List<Color> colors;
-  static const startAlignment = Alignment.topLeft;
-  static const endAlignment = Alignment.bottomRight;
+  const StartScreen({super.key});
 
   @override
   Widget build(context) {
