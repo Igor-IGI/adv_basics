@@ -16,6 +16,7 @@ class _QuestionScreen extends State<QuestionScreen> {
     return SizedBox(
       width: double.infinity,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text('Question 1'),
           const SizedBox(
