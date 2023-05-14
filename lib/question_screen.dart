@@ -18,33 +18,37 @@ class _QuestionScreen extends State<QuestionScreen> {
 
     return SizedBox(
       width: double.infinity,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            alignment: Alignment.topCenter,
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Text(
-              currentQuestion.text,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 20,
+      child: Container(
+        margin: const EdgeInsets.all(40),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              alignment: Alignment.topCenter,
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Text(
+                currentQuestion.text,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                ),
               ),
             ),
-          ),
-          const SizedBox(
-            height: 30,
-          ),
-          ...currentQuestion.answers.map(
-            (answers) {
-              return AnswerButton(
-                answerText: answers,
-                onTap: () {},
-              );
-            },
-          ),
-        ],
+            const SizedBox(
+              height: 30,
+            ),
+            ...currentQuestion.answers.map(
+              (answers) {
+                return AnswerButton(
+                  answerText: answers,
+                  onTap: () {},
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
