@@ -6,7 +6,7 @@ const questions = [
     [
       'Widgets',
       'Components',
-      'BLocks',
+      'Blocks',
       'Functions',
     ],
   ),
